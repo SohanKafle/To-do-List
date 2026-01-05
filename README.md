@@ -1,6 +1,6 @@
 # To-Do List Application
 
-A simple and interactive to-do list application built with React.
+I built a simple and interactive to-do list application with React for my assignment.
 
 ## Features
 
