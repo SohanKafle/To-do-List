@@ -57,8 +57,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
-        <h1>My To-Do List</h1>
+      <h1>My To-Do List</h1>
         
         <TodoForm addTodo={addTodo} />
 
@@ -84,10 +83,9 @@ function App() {
           deleteTodo={deleteTodo}
         />
 
-        {todos.length === 0 && (
-          <p className="empty-message">No tasks yet. Add one to get started!</p>
-        )}
-      </div>
+      {todos.length === 0 && (
+        <p className="empty-message">No tasks yet. Add one to get started!</p>
+      )}
     </div>
   );
 }
