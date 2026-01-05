@@ -20,14 +20,14 @@
 
 .todo-form button {
   padding: 10px 20px;
-  background: #4CAF50;
+  background: #2196F3;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .todo-form button:hover {
-  background: #45a049;
+  background: #1976D2;
 }
 
 .error-message {
