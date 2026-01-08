@@ -1,37 +1,80 @@
 .todo-form {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .input-container {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .todo-form input {
   flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  font-size: 14px;
+  padding: 14px 18px;
+  border: 2px solid #e0e0e0;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.todo-form input:focus {
+  outline: none;
+  border-color: #667eea;
 }
 
 .todo-form input.error {
-  border-color: red;
+  border-color: #e74c3c;
 }
 
 .todo-form button {
-  padding: 10px 20px;
-  background: #2196F3;
+  padding: 14px 28px;
+  background: #667eea;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s;
 }
 
 .todo-form button:hover {
-  background: #1976D2;
+  background: #5568d3;
+  transform: translateY(-1px);
+}
+
+.todo-form button:active {
+  transform: translateY(0);
 }
 
 .error-message {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    gap: 10px;
+  }
+  
+  .todo-form input {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .todo-form button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-container {
+    flex-direction: column;
+  }
+  
+  .todo-form button {
+    width: 100%;
+  }
 }
